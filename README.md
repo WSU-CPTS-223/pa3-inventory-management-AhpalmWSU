@@ -1,9 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/pAwGQi_N)
+I decided to use three data structure for this assignment. Two is hashtables and one are link list. To perform the find for unique ID I decided to use a hashtable whos index are perform by a quadratic hash function. I chose quadratic probing to stay away from primary clustering when handling huge amount of data. In using Hashtable for unique ID, ill be able to perform a time comlexity O(1) to find id. For listing every data that share the same category, I decided to use a hashtable that performs chaining which will need a link list. This make the search for category O(1) and tranverse through the list to print O(n). For the products that has more than one category, i implemented a array to store those categories. Those values will be used later at main.cpp in a while loop to insert the same data to the hashtable but with a different key value (category). 
 
-# PA4 Skeleton Code
-We expect a fully functioninig command line REPL application for an inventory querying system. Feel free to modify the skeleton code as you see fit.
-
-### How to run the current skeleton code
-`make` will compile and execute the skeleton code
-
-Feel free to modify Makefile as you see fit.
+For my test, i used the test assert function to check if the value I expect or not expect will result correctly. I also printed products data to see if they would print or not depending if it was inserted to the data structures. 
